@@ -39,8 +39,8 @@
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
 SELECT
-    CAST(strftime ('%Y', c14) AS INTERGER) as YEAR,
-    COUNT(*) AS 'CANT'
+    strftime ('%Y', c14) as YEAR,
+    COUNT(*)
 FROM
     tbl1
 WHERE
