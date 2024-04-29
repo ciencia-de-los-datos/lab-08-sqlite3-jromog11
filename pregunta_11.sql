@@ -38,3 +38,12 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
+SELECT
+    CAST(strftime ('%Y', c14) AS INTERGER) as YEAR,
+    COUNT(*) AS 'CANT'
+FROM
+    tbl1
+WHERE
+    YEAR = '2018'
+GROUP BY
+    YEAR
